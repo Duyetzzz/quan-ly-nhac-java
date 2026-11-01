@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+    android:background="@color/bg">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginBottom="18dp">
+            <TextView android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/bg_hero" android:gravity="center" android:text="♫" android:textColor="@color/white" android:textSize="26sp"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:paddingStart="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MUSIC LIBRARY" android:textColor="@color/purple" android:textSize="12sp" android:letterSpacing="0.16" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Quản lý file nhạc" style="@style/TitleLarge"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_hero" android:orientation="vertical" android:padding="22dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="BÀI TẬP LỚN · ANDROID JAVA" android:textColor="#DCD7FF" android:letterSpacing="0.11" android:textSize="11sp" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Thư viện âm nhạc\ncủa bạn, gọn trong một nơi." android:textColor="@color/white" android:textSize="25sp" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Quản lý dữ liệu · Tra cứu thông minh · SQLite offline" android:textColor="#E9E5FF" android:textSize="12sp"/>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:layout_marginBottom="10dp" android:text="Tổng quan" style="@style/TitleSmall"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="112dp" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="16dp" android:layout_marginEnd="6dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thể loại" style="@style/BodyMuted"/>
+                <TextView android:id="@+id/tvGenreCount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="0" android:textColor="@color/ink" android:textSize="30sp" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="112dp" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="16dp" android:layout_marginStart="6dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="File nhạc" style="@style/BodyMuted"/>
+                <TextView android:id="@+id/tvSongCount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="0" android:textColor="@color/purple" android:textSize="30sp" android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:layout_marginBottom="10dp" android:text="Chức năng quản lý" style="@style/TitleSmall"/>
+        <LinearLayout android:id="@+id/goGenres" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:background="@drawable/bg_card" android:orientation="horizontal" android:gravity="center_vertical" android:padding="18dp" android:clickable="true" android:focusable="true">
+            <TextView android:layout_width="46dp" android:layout_height="46dp" android:gravity="center" android:text="▦" android:textSize="26sp" android:textColor="@color/purple" android:background="@drawable/bg_chip"/>
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="14dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Quản lý thể loại" style="@style/TitleSmall"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thêm, sửa, xóa và quản lý độ tuổi nghe" style="@style/BodyMuted" android:layout_marginTop="3dp"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/purple" android:textSize="27sp"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/goSongs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:background="@drawable/bg_card" android:orientation="horizontal" android:gravity="center_vertical" android:padding="18dp" android:clickable="true" android:focusable="true">
+            <TextView android:layout_width="46dp" android:layout_height="46dp" android:gravity="center" android:text="♫" android:textSize="27sp" android:textColor="@color/purple" android:background="@drawable/bg_chip"/>
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="14dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Quản lý file nhạc" style="@style/TitleSmall"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thêm nhạc, ảnh, mô tả và link tải" style="@style/BodyMuted" android:layout_marginTop="3dp"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/purple" android:textSize="27sp"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/goReports" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_card" android:orientation="horizontal" android:gravity="center_vertical" android:padding="18dp" android:clickable="true" android:focusable="true">
+            <TextView android:layout_width="46dp" android:layout_height="46dp" android:gravity="center" android:text="▥" android:textSize="26sp" android:textColor="@color/purple" android:background="@drawable/bg_chip"/>
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="14dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Báo cáo &amp; truy vấn" style="@style/TitleSmall"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thống kê thể loại · Link nhạc trên 40 tuổi" style="@style/BodyMuted" android:layout_marginTop="3dp"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/purple" android:textSize="27sp"/>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="10dp" android:text="Vừa thêm gần đây" style="@style/TitleSmall"/>
+        <LinearLayout android:id="@+id/recentContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Đồ án Android Studio · Java · SQLite" android:textColor="@color/muted" android:textAlignment="center" android:textSize="12sp"/>
+    </LinearLayout>
+</ScrollView>

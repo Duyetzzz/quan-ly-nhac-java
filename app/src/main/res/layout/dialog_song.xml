@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mã file nhạc *" android:textColor="@color/ink" android:textStyle="bold" android:textSize="13sp"/>
+        <EditText android:id="@+id/editSongCode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:inputType="textCapCharacters" android:hint="VD: NH001" android:maxLength="30" android:singleLine="true" style="@style/InputField"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="Tên file nhạc *" android:textColor="@color/ink" android:textStyle="bold" android:textSize="13sp"/>
+        <EditText android:id="@+id/editSongName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:hint="VD: Bản nhạc yêu thích" android:maxLength="150" android:singleLine="true" style="@style/InputField"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="Loại file *" android:textColor="@color/ink" android:textStyle="bold" android:textSize="13sp"/>
+        <EditText android:id="@+id/editFileType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:hint="MP3 / WAV / FLAC / AAC..." android:maxLength="20" android:singleLine="true" style="@style/InputField"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="Thể loại *" android:textColor="@color/ink" android:textStyle="bold" android:textSize="13sp"/>
+        <Spinner android:id="@+id/editSongGenre" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="6dp" android:background="@drawable/bg_input" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="Link tải / link nghe *" android:textColor="@color/ink" android:textStyle="bold" android:textSize="13sp"/>
+        <EditText android:id="@+id/editSongUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:hint="https://..." android:inputType="textUri" android:singleLine="true" style="@style/InputField"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="Hình ảnh bài nhạc" android:textColor="@color/ink" android:textStyle="bold" android:textSize="13sp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:orientation="horizontal" android:gravity="center_vertical">
+            <ImageView android:id="@+id/editImagePreview" android:layout_width="72dp" android:layout_height="72dp" android:background="@drawable/bg_cover" android:scaleType="centerCrop" android:contentDescription="Hình ảnh đã chọn"/>
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="12dp">
+                <Button android:id="@+id/btnPickImage" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Chọn ảnh từ máy" style="@style/ActionOutline"/>
+                <Button android:id="@+id/btnClearImage" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bỏ chọn ảnh" style="@style/ActionOutline"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="Mô tả" android:textColor="@color/ink" android:textStyle="bold" android:textSize="13sp"/>
+        <EditText android:id="@+id/editSongDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:hint="Nội dung giới thiệu, tác giả, ghi chú..." android:inputType="textMultiLine|textCapSentences" android:gravity="top" android:minLines="3" android:maxLines="6" style="@style/InputField"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="* Trường bắt buộc. Link phải bắt đầu bằng https:// hoặc http://." style="@style/BodyMuted"/>
+    </LinearLayout>
+</ScrollView>

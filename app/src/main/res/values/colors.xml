@@ -1,0 +1,17 @@
+<resources>
+    <color name="ink">#172236</color>
+    <color name="subtle">#64748B</color>
+    <color name="muted">#94A3B8</color>
+    <color name="bg">#F4F6FB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="purple">#5546DC</color>
+    <color name="purple_dark">#3B2EAF</color>
+    <color name="purple_light">#EEEBFF</color>
+    <color name="line">#E5E9F2</color>
+    <color name="red">#D44353</color>
+    <color name="red_light">#FFF0F1</color>
+    <color name="green">#188878</color>
+    <color name="green_light">#E5F8F4</color>
+    <color name="gold">#FCB647</color>
+    <color name="cover">#E9E5FF</color>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="15dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="top">
+        <FrameLayout android:layout_width="74dp" android:layout_height="74dp" android:background="@drawable/bg_cover">
+            <TextView android:id="@+id/coverIcon" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:text="♫" android:textSize="38sp" android:textColor="@color/purple"/>
+            <ImageView android:id="@+id/songImage" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="Ảnh bài nhạc" android:visibility="gone"/>
+        </FrameLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:paddingStart="12dp">
+            <TextView android:id="@+id/songName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tên bản nhạc" android:textColor="@color/ink" android:textSize="16sp" android:textStyle="bold" android:maxLines="2" android:ellipsize="end"/>
+            <TextView android:id="@+id/songCode" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mã: NH001" style="@style/BodyMuted" android:layout_marginTop="4dp"/>
+            <TextView android:id="@+id/songMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nhạc vàng · MP3" android:textColor="@color/purple" android:textSize="12sp" android:layout_marginTop="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/songAge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Độ tuổi nghe: 30 – 100 tuổi" style="@style/BodyMuted"/>
+    <TextView android:id="@+id/songDesc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="2" android:ellipsize="end" android:text="Mô tả bài nhạc" style="@style/BodyMuted"/>
+    <TextView android:id="@+id/songLink" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:textColor="@color/purple" android:textSize="12sp" android:singleLine="true" android:ellipsize="middle" android:text="https://..."/>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="12dp" android:background="@color/line"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal" android:gravity="end">
+        <Button android:id="@+id/btnOpenSong" android:layout_width="0dp" android:layout_weight="1" android:layout_height="40dp" android:text="↗ Mở link" style="@style/ActionOutline"/>
+        <Button android:id="@+id/btnCopySong" android:layout_width="0dp" android:layout_weight="1" android:layout_height="40dp" android:layout_marginStart="7dp" android:text="Sao chép" style="@style/ActionOutline"/>
+        <Button android:id="@+id/btnEditSong" android:layout_width="0dp" android:layout_weight="1" android:layout_height="40dp" android:layout_marginStart="7dp" android:text="Sửa" style="@style/ActionOutline"/>
+        <Button android:id="@+id/btnDeleteSong" android:layout_width="0dp" android:layout_weight="1" android:layout_height="40dp" android:layout_marginStart="7dp" android:text="Xóa" style="@style/ActionOutline" android:textColor="@color/red"/>
+    </LinearLayout>
+</LinearLayout>

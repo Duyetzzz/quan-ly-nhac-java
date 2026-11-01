@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/bg">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="20dp">
+        <TextView android:id="@+id/btnBack" android:layout_width="42dp" android:layout_height="42dp" android:gravity="center" android:text="‹" android:textSize="34sp" android:textColor="@color/ink" android:contentDescription="Quay lại"/>
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="8dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Báo cáo &amp; truy vấn" style="@style/TitleLarge"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thống kê và lọc link tải theo độ tuổi" style="@style/BodyMuted"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="20dp" android:paddingEnd="20dp" android:paddingBottom="25dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="18dp" android:background="@drawable/bg_hero" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TỔNG SỐ FILE NHẠC" android:textColor="#DCD7FF" android:textStyle="bold" android:textSize="12sp"/>
+                <TextView android:id="@+id/reportTotal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="0" android:textSize="34sp" android:textColor="@color/white" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dữ liệu thống kê trực tiếp từ SQLite" android:textColor="#E9E5FF" android:textSize="12sp"/>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="10dp" android:text="1. Thống kê theo thể loại" style="@style/TitleSmall"/>
+            <LinearLayout android:id="@+id/summaryContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="10dp" android:text="2. Liệt kê file nhạc theo thể loại" style="@style/TitleSmall"/>
+            <Spinner android:id="@+id/filterGenreReport" android:layout_width="match_parent" android:layout_height="50dp" android:background="@drawable/bg_input" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+            <TextView android:id="@+id/reportGenreCount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="10dp" android:text="0 file" style="@style/BodyMuted"/>
+            <LinearLayout android:id="@+id/reportGenreSongs" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="3. Link nhạc dành cho người trên 40" style="@style/TitleSmall"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="10dp" android:text="Hiển thị bài thuộc thể loại có khoảng tuổi nghe bao gồm ít nhất một tuổi từ 41 trở lên." style="@style/BodyMuted"/>
+            <Spinner android:id="@+id/filterGenre40" android:layout_width="match_parent" android:layout_height="50dp" android:background="@drawable/bg_input" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+            <EditText android:id="@+id/search40" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:inputType="text" android:singleLine="true" android:hint="⌕  Tìm tên hoặc mã bài nhạc" style="@style/InputField"/>
+            <TextView android:id="@+id/reportCount40" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="10dp" android:text="0 kết quả" style="@style/BodyMuted"/>
+            <LinearLayout android:id="@+id/links40Container" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
